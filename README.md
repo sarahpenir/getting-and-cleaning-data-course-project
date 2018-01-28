@@ -1,12 +1,14 @@
-## Peer-graded Assignment: Getting and Cleaning Data Course Project
+# Peer-graded Assignment: Getting and Cleaning Data Course Project
 
-The R script ```run_analysis.R``` performs the following:
+## Overview
 
-1. Downloads the ```UCI HAR Dataset.zip``` file from the provided link and unzips the file in the working directory
-2. Loads the activity labels file (```activity_labels.txt```)
-3. Loads the features file (```features.txt```), extracts only the mean and standard deviation measurements, and fixes the names of the features
-4. Loads the training dataset (```subject_train.txt```, ```y_train.txt```) and selects only the desired features from the collection of measurements (```X_train.txt```)
-5. Loads the test dataset (```subject_test.txt```, ```y_test.txt```) and selects only the desired features from the collection of measurements (```X_test.txt```)
-6. Merges the training and test datasets, and assigns descriptive column names to the columns
-7. Converts the ```activity``` column into factors
-8. Creates the a tidy dataset (```tidydata.txt```) with the average of each variable for each activity and each subject
+The UC Irvine Human Activity Recognition (UC HAR) database was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The purpose of this project is to successfully collect, work with, and clean the data set.
+
+## Contents of the Repository
+
+The repository contains the following files:
+
+1. ```README.md``` - provides a description of the contents of the repository
+2. ```CodeBook.md``` - describes the variables, data, and transformations that were performed to clean up the data
+3. ```run_analysis.R``` - performs the necessary transformations on the original data set 
+4. ```tidydata.txt``` - the final tidy data set with the average of each variable for each activity and each subject
