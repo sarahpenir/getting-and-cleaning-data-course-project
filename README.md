@@ -1,10 +1,10 @@
-# Peer-graded Assignment: Getting and Cleaning Data Course Project
+## Peer-graded Assignment: Getting and Cleaning Data Course Project
 
-## Overview
+### Overview
 
 The UC Irvine Human Activity Recognition (UC HAR) database was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The purpose of this project is to successfully collect, work with, and clean the data set.
 
-## Contents of the Repository
+### Contents of the Repository
 
 The repository contains the following files:
 
