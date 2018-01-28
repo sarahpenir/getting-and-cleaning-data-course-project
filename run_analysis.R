@@ -5,8 +5,6 @@ library(stringr)
 
 ## Download and unzip the dataset
 
-setwd("G:/Coursera/03 - Getting and Cleaning Data/Week 4 - Quiz")
-
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl, "UCI HAR Dataset.zip")
 
@@ -53,8 +51,7 @@ combined <- rbind(train,test)
 colnames(combined) <- c("subject", "activity", featuresSelected[,2])
 combined$activity <- factor(combined$activity, levels = activitylabels[,1], labels = activitylabels[,2])
 
-## Create the a tidy dataset with the average of each variable
-## for each activity and each subject
+## Create the a tidy dataset with the average of each variable for each activity and each subject
 
 combinedMean <- combined %>%
   group_by(subject, activity) %>%
